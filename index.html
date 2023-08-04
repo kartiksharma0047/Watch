@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+    <link rel="stylesheet" href="../Clock/CSS/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <i class="fa-regular fa-clock"></i>
+    <div id="option" class="hidden">
+        <i class="fa-solid fa-circle-left"></i>
+        <h2 id="watch">Stopwatch</h2>
+        <h2 id="time">Clock</h2>
+    </div>
+
+    <div id="Stopwatch" class="hidden">
+        <i class="fa-solid fa-circle-left fa-circle-left-option1"></i>
+        <div id="display">00:00:00</div>
+        <div class="Set">
+            <button id="btn1" class="btn">START</button>
+            <button id="btn2" class="btn">STOP</button>
+            <button id="btn3" class="btn">RESET</button>
+        </div>
+    </div>
+    <script src="../Clock/JavaScript/StopWatch.js"></script>
+
+    <div id="Clock" class="hidden">
+        <i class="fa-solid fa-circle-left fa-circle-left-option2"></i>
+        <h2></h2>
+        <h3></h3>
+        <p></p>
+    </div>
+    <script src="../Clock/JavaScript/clock.js"></script>
+
+    <script src="../Clock/JavaScript/Acess.js"></script>
+</body>
+
+</html>

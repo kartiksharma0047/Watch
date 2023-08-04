@@ -1,0 +1,134 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(20deg,#d3f5cf,#a8dbfa,#635ee2);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Clock Logo CSS*/
+#clock-hide{
+    display: none;
+}
+.fa-clock{
+    display: block;
+    font-size: 3rem;
+    text-shadow:  0 0 20px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s;
+}
+.fa-clock:hover{
+    transform: scale(1.211);
+    color: rgb(105, 105, 105);
+    cursor: pointer;
+}
+.fa-clock:active{
+    transition: none;
+    color: white;
+}
+
+/* 3 Options CSS */
+#option{
+    display: flex;
+}
+#option h2{
+    color: white;
+    width: 200px;
+    text-align: center;
+    padding: 7px 0;
+    margin: 0 40px;
+    background-color: #05c2b6;
+    border-radius: 15px;
+    box-shadow: 1px 1px 5px black;
+    text-shadow: 2px 1px 0 black;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+#option h2:hover{
+    background-color: black;
+}
+#option h2:active{
+    background-color: rgb(50, 50, 50);
+    transition: none;
+}
+.fa-circle-left{
+    position: absolute;
+    font-size: 3rem;
+    color: white;
+    top: 10px;
+    left: 10px;
+    border: 3px solid black;
+    border-radius: 50%;
+    text-shadow: 1px 1px 4px black;
+    transition: all 0.3s;
+}
+.fa-circle-left:hover{
+    transform: scale(1.21);
+    text-shadow: 2px 1px 1px black;
+    cursor: pointer;
+}
+.fa-circle-left:active{
+    transform: scale(1.11);
+    color: rgb(74, 120, 255);
+    transition: none;
+}
+
+/* Stopwatch CSS */
+#display{
+    text-align: center;
+    width: max-content;
+    font-size: 3rem;
+    font-family: sans-serif;
+    font-weight: bolder;
+    background-color: white;
+    padding: 0 10px;
+    margin:30px auto ;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.btn{
+    border-radius: 10px;
+    width: 170px;
+    font-weight: bolder;
+    text-align: center;
+    padding: 7px 0;
+    margin: 0 15px;
+}
+.btn:hover{
+    cursor: pointer;
+}
+
+/* Clock CSS */
+#Clock h2{
+    color: white;
+    font-size:8rem ;
+    text-shadow: 2px 1px 4px rgb(0, 0, 0,8);
+    font-weight: bolder;
+}
+#Clock h3{
+    margin-top: 30px;
+    font-size: 2.7rem;
+    display: block;
+    color: rgb(236, 236, 236);
+    text-shadow: 2px 1px 3px rgb(0, 0, 0)
+}
+#Clock p{
+    color: rgb(178, 178, 178);
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    margin-top: 10px;
+    font-weight: bolder;
+    text-shadow: 1px 1px 1px black;
+}
+
+.hidden{
+    display:none !important;
+}
